@@ -5,10 +5,82 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-        
-<servlet>
+                    
+   <servlet>   
+   		<servlet-name>cardServlet</servlet-name>   
+   		<servlet-class>com.card.cardServlet</servlet-class>
+    </servlet>     
+   <servlet-mapping>   
+   		<servlet-name>cardServlet</servlet-name>
+   		<url-pattern>/card</url-pattern>     
+   </servlet-mapping>
+
+   <servlet>
+   		<servlet-name>accountServlet</servlet-name>
+   		<servlet-class>com.card.accountServlet</servlet-class>  
+   </servlet>
+   <servlet-mapping>
+        <servlet-name>accountServlet</servlet-name>
+        <url-pattern>/account</url-pattern> 
+   </servlet-mapping>  
+   
+   <servlet>   
+   		<servlet-name>logincard</servlet-name>   
+   		<servlet-class>com.card.logincard</servlet-class>
+    </servlet>     
+   <servlet-mapping>   
+   		<servlet-name>logincard</servlet-name>
+   		<url-pattern>/logcard</url-pattern>     
+   </servlet-mapping>
+   
+   <servlet>   
+   		<servlet-name>updatecard</servlet-name>   
+   		<servlet-class>com.card.updatecard</servlet-class>
+    </servlet>     
+   <servlet-mapping>   
+   		<servlet-name>updatecard</servlet-name>
+   		<url-pattern>/upcard</url-pattern>     
+   </servlet-mapping>
+   
+   <servlet>   
+   		<servlet-name>deletecard</servlet-name>   
+   		<servlet-class>com.card.delcard</servlet-class>
+    </servlet>     
+   <servlet-mapping>   
+   		<servlet-name>deletecard</servlet-name>
+   		<url-pattern>/deleted</url-pattern>     
+   </servlet-mapping>  
+      <servlet>   
+   		<servlet-name>loginaccount</servlet-name>   
+   		<servlet-class>com.card.loginaccount</servlet-class>
+    </servlet>     
+   <servlet-mapping>   
+   		<servlet-name>loginaccount</servlet-name>
+   		<url-pattern>/logaccount</url-pattern>     
+   </servlet-mapping>
+   
+      <servlet>   
+   		<servlet-name>updateaccount</servlet-name>   
+   		<servlet-class>com.card.updateaccount</servlet-class>
+    </servlet>     
+   <servlet-mapping>   
+   		<servlet-name>updateaccount</servlet-name>
+   		<url-pattern>/upaccount</url-pattern>     
+   </servlet-mapping>
+   
+   <servlet>   
+   		<servlet-name>deleteaccount</servlet-name>   
+   		<servlet-class>com.card.delaccount</servlet-class>
+    </servlet>
+    
+     <servlet-mapping>   
+   		<servlet-name>deleteaccount</servlet-name>
+   		<url-pattern>/deletedaccount</url-pattern>     
+   </servlet-mapping> 
+   
+   <servlet>
 	<servlet-name>loginServlet</servlet-name>
-	<servlet-class>logpack.loginServlet</servlet-class>
+	<servlet-class>pack1.loginServlet</servlet-class>
 </servlet>
 
 <servlet-mapping>
@@ -18,7 +90,7 @@
 
 <servlet>
 	<servlet-name>regServlet</servlet-name>
-	<servlet-class>logpack.regServlet</servlet-class>
+	<servlet-class>pack1.regServlet</servlet-class>
 </servlet>
 <servlet-mapping>
 	<servlet-name>regServlet</servlet-name>
@@ -27,7 +99,7 @@
 
 <servlet>
 	<servlet-name>updateServlet</servlet-name>
-	<servlet-class>logpack.updateServlet</servlet-class>
+	<servlet-class>pack1.updateServlet</servlet-class>
 </servlet>
 <servlet-mapping>
 	<servlet-name>updateServlet</servlet-name>
@@ -36,11 +108,12 @@
 
 <servlet>
 	<servlet-name>delete</servlet-name>
-	<servlet-class>logpack.delete</servlet-class>
+	<servlet-class>pack1.delete</servlet-class>
 </servlet>
 <servlet-mapping>
 	<servlet-name>delete</servlet-name>
 	<url-pattern>/deletea</url-pattern>
-</servlet-mapping>
-
-</web-app>
+</servlet-mapping> 
+     
+  
+  </web-app>  

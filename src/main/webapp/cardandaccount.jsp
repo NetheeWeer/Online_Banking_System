@@ -4,8 +4,8 @@
 <html>
 <head>
     <meta charset="ISO-8859-1">
-    <title>Oops !!</title>
-    <link rel="stylesheet" type="text/css" href="css/success.css">
+    <title>Card and Account</title>
+    <link rel="stylesheet" type="text/css" href="css/cardhome.css">
   </head>
     <header>
       <img src="img/logo.png" width="100px" id="p1">
@@ -24,19 +24,23 @@
     </header>
 
   <body>
-  <center>
-   <h1 id="lb">Unsuccess !!</h1>
 
+    
 
-<button id="btn1" type="button"><a href="cardandaccount.jsp">go back</button> <br>
-  </center>
-     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="pro">
+        <div class="pro1">
+        <h1 id="lb">Select your option</h1>
+          <button id="btn1" class ="cardbutton"><a href="card.jsp">Add Card</a></button> <br>
+   <button  id="btn1" class ="viewCard"><a href="enteruser.jsp">view Card</button> <br><br><br>
+   
+
+   
+        </div>
+    </div>   
+    <br><br>
     <footer>
         <h1 id="ft">Call for assistance  081-22234467</h1>
     </footer>
-  
- 
-</body>
-<button type="button"><a href="cardandaccount.jsp">go back</button> <br>
-</body>
+
+  </body>
 </html>
