@@ -5,23 +5,22 @@ import java.sql.DriverManager;
 
 public class DB {
 	
-	 //creating connection
-	private static String url = "jdbc:mysql://localhost:3306/cardandaccount";
+	//creating database connection
+	private static String url = "jdbc:mysql://localhost:3306/database1";
 	private static String user = "root";
-	private static String password = "lasitha";
+	private static String password = "nismo2333";
 	private static Connection con;
 	
 	public static Connection getConnection() {
 		
 		try {
-			//establishing the connection
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection(url,user,password);
 			System.out.println("Succcessful");
 	    }
 		
 		catch(Exception e){
-			//detecting errors in the connection
+			//exception handling
 			System.out.println("Unsuccessful");	
 		}
 		
