@@ -148,4 +148,111 @@ public static List<custom> getCustomerDetails(String ID) {
     	return isSuccess;
     }
  
+ public static boolean inserttrans(String sender2, String amount2, String type2, String reciever2, String reff2) {
+		
+ 	boolean isSuccess = false;
+ 	
+ 	try {
+ 		con = DB.getConnection();
+ 		stmt = con.createStatement();
+ 		String sql3 = "insert into funds values(0, '"+sender2+"', '"+amount2+"', '"+type2+"', '"+reciever2+"', '"+reff2+"')";
+ 		int rs = stmt.executeUpdate(sql3);
+ 		
+ 		if(rs > 0) {
+ 			isSuccess = true;
+ 		}
+ 		else {
+ 			isSuccess = false;
+ 		}
+ 		
+ 	}
+ 	catch(Exception e){
+ 		e.printStackTrace();
+ 	}
+ 	
+ 	return false;
+ 	
+ }
+ 
+ public static boolean deletetrans(String id7) {
+ 	
+ 	
+ 	boolean isSuccess = false;
+ 	try{
+ 		con = DB.getConnection();
+ 		stmt = con.createStatement();
+ 		String sql2 ="DELETE FROM funds WHERE transID='"+id7+"' ";
+ 		int rs = stmt.executeUpdate(sql2);
+ 		
+ 		if(rs > 0) {
+ 			isSuccess = true;
+ 		}
+ 		else {
+ 			isSuccess = false;
+ 		}
+ 	}
+ 	catch(Exception e) {
+ 		e.printStackTrace();
+ 	}
+ 	
+ 	return isSuccess;
+ }
+
+ public static boolean updatetransaction(String idx,  String reff) {
+ 	
+ 	
+ 	boolean isSuccess = false;
+ 	try{
+ 		con = DB.getConnection();
+ 		stmt = con.createStatement();
+ 		String sql4 ="update funds set reff='"+reff+"' where transID='"+idx+"'";
+ 		int rs = stmt.executeUpdate(sql4);
+ 		
+ 		if(rs > 0) {
+ 			isSuccess = true;
+ 		}
+ 		else {
+ 			isSuccess = false;
+ 		}
+ 	}
+ 	catch(Exception e) {
+ 		e.printStackTrace();
+ 	}
+ 	
+ 	return isSuccess;
+ }
+ 
+ //limited
+ public static List<transfer> gettransac(String ID) {
+
+		int conID = Integer.parseInt(ID);
+		ArrayList<transfer> tra = new ArrayList<transfer>();
+		
+		try {
+			
+			con = DB.getConnection();
+			stmt = con.createStatement();
+			String sql3 = "select * from funds where id = '"+conID+"'";
+			rs = stmt.executeQuery(sql3);
+			
+			while(rs.next()) {
+				int idx = rs.getInt(1);
+				String senderx = rs.getString(2);
+				String typex = rs.getString(3);
+				String amountx = rs.getString(4);
+				String recieverx = rs.getString(5);
+				String reffx = rs.getString(5);
+				
+				transfer t = new transfer(idx, senderx, typex, amountx, recieverx, reffx);
+				tra.add(t);
+			}
+					
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return tra;
+	}
+ 
 }
