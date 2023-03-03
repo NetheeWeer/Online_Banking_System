@@ -7,176 +7,31 @@
          version="3.1">
 
 <servlet>
-	<servlet-name>loginServlet</servlet-name>
-	<servlet-class>logpack.loginServlet</servlet-class>
-</servlet>
-
-<servlet-mapping>
-	<servlet-name>loginServlet</servlet-name>
-	<url-pattern>/login</url-pattern>
-</servlet-mapping>
-
-<servlet>
-	<servlet-name>regServlet</servlet-name>
-	<servlet-class>logpack.regServlet</servlet-class>
+	<servlet-name>insertloan</servlet-name>
+	<servlet-class>pack1.insertloan</servlet-class>
 </servlet>
 <servlet-mapping>
-	<servlet-name>regServlet</servlet-name>
+	<servlet-name>insertloan</servlet-name>
 	<url-pattern>/reg</url-pattern>
 </servlet-mapping>
 
 <servlet>
-	<servlet-name>updateServlet</servlet-name>
-	<servlet-class>logpack.updateServlet</servlet-class>
+	<servlet-name>updateloan</servlet-name>
+	<servlet-class>pack1.updateloan</servlet-class>
 </servlet>
 <servlet-mapping>
-	<servlet-name>updateServlet</servlet-name>
+	<servlet-name>updateloan</servlet-name>
 	<url-pattern>/update</url-pattern>
 </servlet-mapping>
 
 <servlet>
-	<servlet-name>delete</servlet-name>
-	<servlet-class>logpack.delete</servlet-class>
+	<servlet-name>deleteloan</servlet-name>
+	<servlet-class>pack1.deleteloan</servlet-class>
 </servlet>
 <servlet-mapping>
-	<servlet-name>delete</servlet-name>
-	<url-pattern>/deletea</url-pattern>
+	<servlet-name>deleteloan</servlet-name>
+	<url-pattern>/deletel</url-pattern>
 </servlet-mapping>
-
-<servlet>
-	<servlet-name>createtrans</servlet-name>
-	<servlet-class>pack1.createtrans</servlet-class>
-</servlet>
-<servlet-mapping>
-	<servlet-name>createtrans</servlet-name>
-	<url-pattern>/ctrans</url-pattern>
-</servlet-mapping>
-
-<servlet>
-	<servlet-name>deletetrans</servlet-name>
-	<servlet-class>pack1.deletetrans</servlet-class>
-</servlet>
-<servlet-mapping>
-	<servlet-name>deletetrans</servlet-name>
-	<url-pattern>/dtrans</url-pattern>
-</servlet-mapping>
-
-<servlet>
-	<servlet-name>updatetrans</servlet-name>
-	<servlet-class>pack1.updatetrans</servlet-class>
-</servlet>
-<servlet-mapping>
-	<servlet-name>updatetrans</servlet-name>
-	<url-pattern>/updatet</url-pattern>
-</servlet-mapping>
-
-<servlet>   
-   		<servlet-name>cardServlet</servlet-name>   
-   		<servlet-class>com.card.cardServlet</servlet-class>
-    </servlet>     
-   <servlet-mapping>   
-   		<servlet-name>cardServlet</servlet-name>
-   		<url-pattern>/card</url-pattern>     
-   </servlet-mapping>
-
-   <servlet>
-   		<servlet-name>accountServlet</servlet-name>
-   		<servlet-class>com.card.accountServlet</servlet-class>  
-   </servlet>
-   <servlet-mapping>
-        <servlet-name>accountServlet</servlet-name>
-        <url-pattern>/account</url-pattern> 
-   </servlet-mapping>  
-   
-   <servlet>   
-   		<servlet-name>logincard</servlet-name>   
-   		<servlet-class>com.card.logincard</servlet-class>
-    </servlet>     
-   <servlet-mapping>   
-   		<servlet-name>logincard</servlet-name>
-   		<url-pattern>/logcard</url-pattern>     
-   </servlet-mapping>
-   
-   <servlet>   
-   		<servlet-name>updatecard</servlet-name>   
-   		<servlet-class>com.card.updatecard</servlet-class>
-    </servlet>     
-   <servlet-mapping>   
-   		<servlet-name>updatecard</servlet-name>
-   		<url-pattern>/upcard</url-pattern>     
-   </servlet-mapping>
-   
-   <servlet>   
-   		<servlet-name>deletecard</servlet-name>   
-   		<servlet-class>com.card.delcard</servlet-class>
-    </servlet>     
-   <servlet-mapping>   
-   		<servlet-name>deletecard</servlet-name>
-   		<url-pattern>/deleted</url-pattern>     
-   </servlet-mapping>  
-      <servlet>   
-   		<servlet-name>loginaccount</servlet-name>   
-   		<servlet-class>com.card.loginaccount</servlet-class>
-    </servlet>     
-   <servlet-mapping>   
-   		<servlet-name>loginaccount</servlet-name>
-   		<url-pattern>/logaccount</url-pattern>     
-   </servlet-mapping>
-   
-      <servlet>   
-   		<servlet-name>updateaccount</servlet-name>   
-   		<servlet-class>com.card.updateaccount</servlet-class>
-    </servlet>     
-   <servlet-mapping>   
-   		<servlet-name>updateaccount</servlet-name>
-   		<url-pattern>/upaccount</url-pattern>     
-   </servlet-mapping>
-   
-   <servlet>   
-   		<servlet-name>deleteaccount</servlet-name>   
-   		<servlet-class>com.card.delaccount</servlet-class>
-    </servlet>
-    
-     <servlet-mapping>   
-   		<servlet-name>deleteaccount</servlet-name>
-   		<url-pattern>/deletedaccount</url-pattern>     
-   </servlet-mapping> 
-   
-   <servlet>
-	<servlet-name>loginServlet</servlet-name>
-	<servlet-class>pack1.loginServlet</servlet-class>
-</servlet>
-
-<servlet-mapping>
-	<servlet-name>loginServlet</servlet-name>
-	<url-pattern>/login</url-pattern>
-</servlet-mapping>
-
-<servlet>
-	<servlet-name>regServlet</servlet-name>
-	<servlet-class>pack1.regServlet</servlet-class>
-</servlet>
-<servlet-mapping>
-	<servlet-name>regServlet</servlet-name>
-	<url-pattern>/reg</url-pattern>
-</servlet-mapping>
-
-<servlet>
-	<servlet-name>updateServlet</servlet-name>
-	<servlet-class>pack1.updateServlet</servlet-class>
-</servlet>
-<servlet-mapping>
-	<servlet-name>updateServlet</servlet-name>
-	<url-pattern>/update</url-pattern>
-</servlet-mapping>
-
-<servlet>
-	<servlet-name>delete</servlet-name>
-	<servlet-class>pack1.delete</servlet-class>
-</servlet>
-<servlet-mapping>
-	<servlet-name>delete</servlet-name>
-	<url-pattern>/deletea</url-pattern>
-</servlet-mapping> 
-
+      
+         
 </web-app>
